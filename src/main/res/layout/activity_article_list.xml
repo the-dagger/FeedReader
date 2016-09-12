@@ -2,43 +2,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:background="@color/md_blue_400"
-        android:layout_height="100dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="bottom"
-                android:layout_marginLeft="@dimen/key_line"
-                android:layout_marginStart="@dimen/key_line"
-                android:src="@drawable/logo"
-                android:contentDescription="@string/app_name" />
+        android:layout_height="100dp"
+        android:background="@color/md_blue_400">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/key_line"
+            android:layout_marginStart="@dimen/key_line"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
     </android.support.design.widget.AppBarLayout>
+
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
-        android:layout_marginTop="100dp"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
-            android:paddingLeft="@dimen/key_line"
-            android:paddingStart="@dimen/key_line"
-            android:paddingRight="@dimen/key_line"
-            android:paddingEnd="@dimen/key_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/key_line_card"
+            android:paddingLeft="@dimen/key_line_card"
+            android:paddingRight="@dimen/key_line_card"
+            android:paddingStart="@dimen/key_line_card"
             android:scrollbarStyle="outsideOverlay" />
 
-
-    <!--<FrameLayout-->
-        <!--android:id="@+id/toolbar_container"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="112dp"-->
-        <!--android:background="@color/md_blue_400"-->
-        <!--android:elevation="8dp">-->
-
-
-    <!--</FrameLayout>-->
-</android.support.v4.widget.SwipeRefreshLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>

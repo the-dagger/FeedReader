@@ -7,5 +7,6 @@
     <dimen name="fab_elevation">8dp</dimen>
     <dimen name="fab_press_translation_z">6dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
-    <dimen name="key_line">12dp</dimen>
+    <dimen name="key_line_card">12dp</dimen>
+    <dimen name="key_line">16dp</dimen>
 </resources>
