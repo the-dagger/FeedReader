@@ -1,5 +1,4 @@
 <com.example.xyzreader.ui.DrawInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/draw_insets_frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -22,8 +21,12 @@
                 <ImageView
                     android:id="@+id/photo"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
+                    android:scaleType="centerCrop"
+                    android:layout_height="@dimen/detail_photo_height" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:background="@drawable/photo_background_protection"/>
             </FrameLayout>
 
             <com.example.xyzreader.ui.MaxWidthLinearLayout
@@ -33,6 +36,8 @@
                 android:layout_marginTop="@dimen/detail_card_top_margin"
                 android:background="#fff"
                 android:elevation="2dp"
+                android:layout_marginLeft="@dimen/detail_text_margin"
+                android:layout_marginRight="@dimen/detail_text_margin"
                 android:maxWidth="@dimen/detail_card_max_width"
                 android:orientation="vertical">
 
