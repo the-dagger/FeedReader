@@ -9,5 +9,6 @@
 
     <string name="up">Up</string>
     <string name="article_background_image">Article background image</string>
+    <string name="activity_image_trans">transition</string>
 
 </resources>

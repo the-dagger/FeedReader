@@ -2,6 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:theme="@style/Theme.Bacon"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -13,11 +14,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:minHeight="?actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start|bottom"
                 android:layout_marginLeft="@dimen/key_line"
                 android:layout_marginStart="@dimen/key_line"

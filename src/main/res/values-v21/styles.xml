@@ -3,8 +3,19 @@
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@color/md_blue_500</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
     </style>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:statusBarColor">@color/md_blue_500</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Body1</item>
     </style>
 </resources>

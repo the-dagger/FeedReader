@@ -25,6 +25,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/detail_photo_height"
                             android:scaleType="centerCrop"
+                            android:transitionName="@string/activity_image_trans"
                             android:contentDescription="@string/article_background_image" />
 
                         <View
@@ -40,6 +41,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/detail_card_top_margin"
                 android:background="#fff"
+                android:elevation="2dp"
                 android:layout_marginLeft="@dimen/detail_text_margin"
                 android:layout_marginRight="@dimen/detail_text_margin"
                 android:maxWidth="@dimen/detail_card_max_width"
@@ -102,6 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="20dp"
+        android:elevation="8dp"
         android:src="@drawable/ic_share" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>

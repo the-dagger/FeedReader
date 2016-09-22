@@ -19,6 +19,7 @@
             android:id="@+id/thumbnail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:transitionName="@string/activity_image_trans"
             android:background="@color/md_grey_100" />
 
         <TextView
