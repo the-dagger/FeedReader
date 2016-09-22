@@ -2,10 +2,8 @@
 <resources>
 
     <style name="Theme.Bacon.Detail">
-        <!--<item name="android:statusBarColor">@color/md_blue_600</item>-->
     </style>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <!--<item name="android:statusBarColor">@color/md_blue_600</item>-->
     </style>
 </resources>

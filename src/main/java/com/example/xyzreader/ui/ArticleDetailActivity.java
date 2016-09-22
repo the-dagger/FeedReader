@@ -35,7 +35,6 @@ public class ArticleDetailActivity extends ActionBarActivity
 
     private ViewPager mPager;
     private MyPagerAdapter mPagerAdapter;
-    private Toolbar toolbar;
     private View mUpButtonContainer;
     private View mUpButton;
 
@@ -48,9 +47,8 @@ public class ArticleDetailActivity extends ActionBarActivity
                             View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
         }
         setContentView(R.layout.activity_article_detail);
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         getLoaderManager().initLoader(0, null, this);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
         mPagerAdapter = new MyPagerAdapter(getFragmentManager());
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mPagerAdapter);

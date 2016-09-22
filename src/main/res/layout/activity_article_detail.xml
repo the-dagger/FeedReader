@@ -1,13 +1,15 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    style="@style/Theme.Bacon.Detail"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:elevation="0dp"/>
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -18,22 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="@android:color/transparent"
+            android:background="?attr/colorPrimaryDark"
             app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
     </android.support.design.widget.AppBarLayout>
-    <!--<FrameLayout-->
-    <!--android:id="@+id/up_container"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="?actionBarSize"-->
-    <!--android:background="@android:color/transparent">-->
-
-    <!--&lt;!&ndash;<ImageButton&ndash;&gt;-->
-    <!--&lt;!&ndash;android:id="@+id/action_up"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="56dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="?actionBarSize"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:background="?selectableItemBackgroundBorderless"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:contentDescription="@string/up"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:src="@drawable/ic_arrow_back"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />&ndash;&gt;-->
-    <!--</FrameLayout>-->
 </android.support.design.widget.CoordinatorLayout>
