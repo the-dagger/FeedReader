@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:background="@color/md_blue_400"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
     </android.support.design.widget.AppBarLayout>
 
